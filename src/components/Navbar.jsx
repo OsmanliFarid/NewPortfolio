@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="Logo">
           <img src="/public/Logo.png" alt="" />
         </div>
-        <div className="Links flex gap-[35px] justify-center">
+        <div className="Links flex gap-[30px] justify-center">
           {Links.map(({ href, id, title }, index) => {
             return (
               <a href="">
@@ -25,7 +25,11 @@ const Navbar = () => {
                     {title}
                   </a>
                 ) : (
-                  <a className="text-[#858585] " key={index} href={href}>
+                  <a
+                    className="text-[#858585] font-[500] font-[Lato] "
+                    key={index}
+                    href={href}
+                  >
                     {title}
                   </a>
                 )}
@@ -35,7 +39,10 @@ const Navbar = () => {
         </div>
         <div className="grid justify-end">
           <div className="">
-            <a href="#" className="bg-[#FD6F00] p-[10px_35px] rounded-[10px]">
+            <a
+              href="#"
+              className="bg-[#FD6F00] p-[10px_35px] rounded-[10px] font-[Lato] text-[#fff]"
+            >
               Hire Me
             </a>
           </div>
