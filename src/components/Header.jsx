@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 
 const splitText = (text) => text.split("");
 
@@ -13,40 +13,51 @@ const Header = () => {
   const text = "Osmanli Farid";
   const letters = splitText(text);
 
-  const [visibleCount, setVisibleCount] = useState(0); // Neçə hərf görünür
-  const [isDeleting, setIsDeleting] = useState(false); // Yazılır yoxsa silinir
+  const [visibleCount, setVisibleCount] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5 });
 
   useEffect(() => {
-    const speed = 80; // Hərf başına animasiya intervalı
+    if (isInView) {
+      setStartAnimation(true);
+    } else {
+      setVisibleCount(0);
+      setIsDeleting(false);
+      setStartAnimation(false);
+    }
+  }, [isInView]);
 
+  useEffect(() => {
+    if (!startAnimation) return;
+
+    const speed = 80;
     const timeout = setTimeout(() => {
       if (!isDeleting) {
-        // Yazma prosesi
         if (visibleCount < letters.length) {
-          setVisibleCount(visibleCount + 1);
+          setVisibleCount((prev) => prev + 1);
         } else {
-          // Yazı tam görünəndən sonra silməyə başla
-          setTimeout(() => setIsDeleting(true), 1000); // 1 saniyə dayanır tam yazıda
+          setTimeout(() => setIsDeleting(true), 1000);
         }
       } else {
-        // Silmə prosesi
         if (visibleCount > 0) {
-          setVisibleCount(visibleCount - 1);
+          setVisibleCount((prev) => prev - 1);
         } else {
-          // Tam silindikdən sonra yenidən yazmağa başla
           setIsDeleting(false);
         }
       }
     }, speed);
 
     return () => clearTimeout(timeout);
-  }, [visibleCount, isDeleting, letters.length]);
+  }, [visibleCount, isDeleting, letters.length, startAnimation]);
 
   return (
-    <div className="flex justify-between mt-[-10px]">
+    <div className="flex justify-between mt-[-10px]" ref={ref}>
       <motion.div
         initial={{ x: -200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.8 }}
       >
         <div className="h-[600.65px] bg-[url('/HeaderGrad.png')] bg-no-repeat bg-center bg-cover w-[516.74px]">
@@ -55,7 +66,7 @@ const Header = () => {
 
             <h1
               className="text-[#6F6D6C] text-[28px] flex gap-1 overflow-hidden"
-              style={{ minWidth: "400px", whiteSpace: "nowrap" }} // Yeri qorumaq üçün
+              style={{ minWidth: "400px", whiteSpace: "nowrap" }}
             >
               <AnimatePresence>
                 {letters.slice(0, visibleCount).map((char, index) => (
@@ -78,7 +89,6 @@ const Header = () => {
               Frontend Developer
             </h1>
 
-            {/* Digər hissələr unchanged */}
             <div className="flex items-center gap-10 mt-[30px] mb-[60px]">
               <a
                 href="#"
@@ -87,7 +97,8 @@ const Header = () => {
                 Hire Me
               </a>
               <a
-                href="#"
+                href="/Cv.pdf"
+                target="_blank"
                 className="w-[209px] h-[48px] rounded-[10px] text-[#6F6D6C] flex justify-center items-center border border-[#6F6D6C]"
               >
                 Download CV
@@ -114,7 +125,7 @@ const Header = () => {
 
       <motion.div
         initial={{ x: 200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 0.9 }}
       >
         <div className="h-[618px] bg-[url('/HeaderGrad2.png')] bg-no-repeat bg-center bg-cover w-[618px]">
