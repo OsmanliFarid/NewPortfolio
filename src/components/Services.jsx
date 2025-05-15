@@ -41,9 +41,12 @@ const Services = () => {
   ];
 
   return (
-    <div className="Container font-[Lato]">
+    <div className=" font-[Lato]">
       <div className="mt-[130px]">
-        <h1 className="text-center text-[40px] text-[#fff]" id="Service">
+        <h1
+          className="text-center text-[24px] md:text-[40px] text-[#fff]"
+          id="Service"
+        >
           Services
         </h1>
         <p className="text-center text-[#858585] mt-[10px] mb-[80px]">
@@ -52,7 +55,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 gap-y-10">
         {Service.map(({ id, icon, title, desc }, index) => (
           <motion.div
             key={id}
@@ -61,10 +64,14 @@ const Services = () => {
             exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: false, amount: 0.4 }}
-            className="w-[399.67px] h-[322px] bg-[#1B1B1B] rounded-[20px] text-center"
+            className="w-[370px] h-[230px] md:w-[399.67px] md:h-[322px] bg-[#1B1B1B] rounded-[20px] text-center"
           >
-            <i className={`${icon} text-[#FD6F00] text-[70px] mt-[30px]`}></i>
-            <h1 className="text-[#FD6F00] text-[24px] p-[25px_0px]">{title}</h1>
+            <i
+              className={`${icon} text-[#FD6F00] text-[28px] md:text-[70px] mt-[30px]`}
+            ></i>
+            <h1 className="text-[#FD6F00] text-[20px] md:text-[24px] p-[15px_0px_10px_0px] md:p-[25px_0px]">
+              {title}
+            </h1>
             <p className="text-[#858585] w-[339px] mt-[10px] m-[auto] leading-[190%]">
               {desc}
             </p>
