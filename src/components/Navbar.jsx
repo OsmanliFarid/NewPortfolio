@@ -1,7 +1,7 @@
 const Navbar = () => {
   const Links = [
-    { id: 1, href: "#", title: "Home" },
-    { id: 2, href: "#", title: "Services" },
+    { id: 1, href: "./index.html", title: "Home" },
+    { id: 2, href: "#Service", title: "Services" },
     { id: 3, href: "#", title: "About me" },
     { id: 4, href: "#", title: "Portfolio" },
     { id: 5, href: "#", title: "Contact me" },
