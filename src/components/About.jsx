@@ -72,29 +72,28 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p className="text-[#858585] leading-[200%] tracking-[0.5px] max-w-[631px]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-            fuga iste quo atque reprehenderit voluptatum a ullam voluptates non
-            fugit. Similique, voluptatibus impedit. Harum, commodi molestias
-            sunt nihil natus perferendis! Harum et ex facere, libero autem
-            quaerat vel nam nisi sit dolorum repellat? Reprehenderit officiis
-            iusto repellat harum iste nihil hic molestiae corporis commodi illum
-            fugiat accusantium, omnis quas soluta. Ex perspiciatis quaerat
-            ratione iste, laborum repellendus natus itaque fuga possimus quas
-            ullam ea voluptatum odio corrupti odit eos est ipsa asperiores! Amet
-            animi placeat voluptate cum est aliquam atque! Pariatur,
-            exercitationem explicabo minus modi eaque dignissimos adipisci
-            similique quam ex commodi! Quas, sequi neque quo, temporibus
-            dignissimos voluptate nemo fugit voluptatum eaque facilis sed
-            accusamus. Expedita excepturi maiores natus. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Accusamus laborum fugit suscipit
-            quis quidem, perspiciatis ratione at vero maxime dolores incidunt!
-            Pariatur modi quaerat odit architecto laboriosam! Non, distinctio
-            cumque!
+            Salam! Mən Osmanlı Fərid, 16 yaşım var və Frontend proqramlaşdırma
+            sahəsində inkişaf edən bir gəncəm. Proqramlaşdırmaya olan həvəsim
+            uşaqlıqdan başlayıb və indi bu sahədə peşəkar olmaq üçün ciddi
+            çalışıram. Mənim üçün proqramlaşdırma təkcə kod yazmaq deyil, həm də
+            yaratmaq, problemləri həll etmək və daim öyrənmək deməkdir. Artıq
+            HTML, CSS, Git, Figma və JavaScript kimi frontend texnologiyalarında
+            əsas biliklərə sahibəm və onları layihələrimdə tətbiq etməyə
+            çalışıram. Hər gün yeni bacarıqlar öyrənir, mövcud biliklərimi
+            təkmilləşdirirəm və praktikada istifadə etmək üçün kiçik layihələr
+            üzərində işləyirəm. Mənim üçün ən vacib dəyərlərdən biri davamlı
+            inkişafdır. Səhvlərimdən dərs çıxarmaq, yeni texnologiyaları kəşf
+            etmək və özümü həm texniki, həm də yaradıcı sahədə daha da
+            təkmilləşdirmək istəyirəm. Eyni zamanda, komandada işləmək, təcrübə
+            qazanmaq və real layihələrdə iştirak etmək məqsədindəyəm. Gələcəkdə
+            beynəlxalq səviyyədə tanınan və maraqlı layihələrdə iştirak edən bir
+            Frontend Developer olmaq mənim əsas hədəfimdir. İnanıram ki, səbr və
+            əzmlə bu hədəfə çatmaq mümkündür.
           </p>
 
           <div className="flex  justify-center md:justify-start">
             <motion.a
-              href="#"
+              href="/public/Cv.pdf"
               target="_blank"
               download
               whileHover={{ scale: 1.05 }}

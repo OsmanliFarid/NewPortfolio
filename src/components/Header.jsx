@@ -104,7 +104,7 @@ const Header = () => {
                 Hire Me
               </a>
               <a
-                href="#"
+                href="/public/Cv.pdf"
                 target="_blank"
                 className="text-[14px] w-[130px] h-[33px] md:w-[209px] md:h-[48px] rounded-[10px] text-[#6F6D6C] flex justify-center items-center border border-[#6F6D6C]"
               >
