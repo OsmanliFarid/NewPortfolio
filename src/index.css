@@ -3,8 +3,13 @@ body {
   background-color: #121212;
 }
 
+html,
 body {
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Yatay scroll üçün */
+  height: 100%; /* tam ekran hündürlüyü */
+  max-width: 100vw; /* eninə scrollun qarşısı alınır */
 }
 .Container {
   max-width: 90vw;
