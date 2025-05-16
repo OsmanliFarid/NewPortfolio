@@ -6,13 +6,13 @@ const Services = () => {
       id: 1,
       icon: "fas fa-code",
       title: "Frontend Development",
-      desc: "Modern texnologiyalardan istifadə edərək sürətli, cavabdeh responsive və istifadəsi asan veb interfeyslər hazırlayıram.",
+      desc: "Modern texnologiyalardan istifadə edərək sürətli, cavabdeh (responsive) və istifadəsi asan veb interfeyslər hazırlayıram.",
     },
     {
       id: 2,
       icon: "fas fa-pencil-ruler",
-      title: "UI/UX Design Figma ilə",
-      desc: "Figma vasitəsilə sadə və istifadəçi dostu interfeys dizaynları hazırlayıram.",
+      title: "Figma'dan Kodlaşdırma",
+      desc: "Verilmiş Figma dizaynlarını piksel dəqiqliyi ilə HTML və CSS vasitəsilə funksional veb səhifələrə çevirirəm.",
     },
     {
       id: 3,
