@@ -93,7 +93,7 @@ const About = () => {
 
           <div className="flex  justify-center md:justify-start">
             <motion.a
-              href="/public/Cv.pdf"
+              href="/Cv.pdf"
               target="_blank"
               download
               whileHover={{ scale: 1.05 }}
