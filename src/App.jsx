@@ -5,7 +5,7 @@ import About from "./components/About";
 const App = () => {
   return (
     <>
-      <div className="max-w-[95vw] m-[auto] sm:max-w-[95vw] md:max-w-[82vw]">
+      <div className="max-w-[95vw] m-[auto] sm:max-w-[95vw] md:max-w-[88vw]">
         <Navbar />
         <Header />
         <Services />

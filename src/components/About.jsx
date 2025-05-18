@@ -108,7 +108,7 @@ const About = () => {
       </div>
 
       <div className="mt-[90px]">
-        <div className="grid grid-cols-2 md:grid-cols-5 ml-[-15px] md:ml-[30px] gap-y-10">
+        <div className="grid grid-cols-2 md:grid-cols-5  gap-y-10 justify-items-center">
           {skills.map(({ name, level, color, icon }, index) => {
             return (
               <motion.div

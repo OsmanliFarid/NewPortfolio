@@ -19,10 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className="grid grid-cols-3 h-[120px] items-center md:fixed md:z-10"
-        id="Index"
-      >
+      <div className="grid grid-cols-3 h-[120px] items-center" id="Index">
         <div className="Bars md:hidden">
           <FaBars className="text-[24px]" onClick={Show} />
         </div>

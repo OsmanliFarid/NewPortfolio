@@ -55,7 +55,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 gap-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-0 justify-items-center gap-y-10 ">
         {Service.map(({ id, icon, title, desc }, index) => (
           <motion.div
             key={id}
