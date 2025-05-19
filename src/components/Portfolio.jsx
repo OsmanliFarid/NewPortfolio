@@ -120,7 +120,7 @@ const Portfolio = () => {
       ],
     },
   ];
-  const [active, Setactive] = useState(2);
+  const [active, Setactive] = useState("");
   const [git, setgit] = useState([]);
   const Show = (id) => {
     let a = id;
