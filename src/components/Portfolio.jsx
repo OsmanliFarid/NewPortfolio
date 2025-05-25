@@ -10,7 +10,8 @@ const Portfolio = () => {
       Git: [
         {
           id: 6,
-          title: "https://github.com/OsmanliFarid/NewPortfolio",
+          img: "./public/vercel1.png",
+          title: "https://school-figma-task5555.vercel.app/",
           desc: "task3",
         },
         {
@@ -162,9 +163,15 @@ const Portfolio = () => {
             {git.map((item) => {
               return (
                 <>
-                  <div className="w-[415px] h-[473px] rounded-2xl bg-red-500">
+                  <div className="w-[425px] h-[285px] rounded-2xl bg-red-500">
                     <div>
-                      <a href={item.title}>salam</a>
+                      <a href={item.title}>
+                        <img
+                          src={item.img}
+                          alt=""
+                          className="w-[425px] h-[285px]"
+                        />
+                      </a>
                     </div>
                     <div className="flex items-end mt-[-23px] h-full">
                       <div className="bg-[#959595]">
