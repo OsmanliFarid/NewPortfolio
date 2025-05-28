@@ -72,28 +72,29 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p className="text-[#858585] leading-[200%] tracking-[0.5px] max-w-[631px]">
-            Salam! Mən Osmanlı Fərid, 16 yaşım var və Frontend proqramlaşdırma
-            sahəsində inkişaf edən bir gəncəm. Proqramlaşdırmaya olan həvəsim
-            uşaqlıqdan başlayıb və indi bu sahədə peşəkar olmaq üçün ciddi
-            çalışıram. Mənim üçün proqramlaşdırma təkcə kod yazmaq deyil, həm də
-            yaratmaq, problemləri həll etmək və daim öyrənmək deməkdir. Artıq
-            HTML, CSS, Git, Figma və JavaScript kimi frontend texnologiyalarında
-            əsas biliklərə sahibəm və onları layihələrimdə tətbiq etməyə
-            çalışıram. Hər gün yeni bacarıqlar öyrənir, mövcud biliklərimi
-            təkmilləşdirirəm və praktikada istifadə etmək üçün kiçik layihələr
-            üzərində işləyirəm. Mənim üçün ən vacib dəyərlərdən biri davamlı
-            inkişafdır. Səhvlərimdən dərs çıxarmaq, yeni texnologiyaları kəşf
-            etmək və özümü həm texniki, həm də yaradıcı sahədə daha da
-            təkmilləşdirmək istəyirəm. Eyni zamanda, komandada işləmək, təcrübə
-            qazanmaq və real layihələrdə iştirak etmək məqsədindəyəm. Gələcəkdə
-            beynəlxalq səviyyədə tanınan və maraqlı layihələrdə iştirak edən bir
-            Frontend Developer olmaq mənim əsas hədəfimdir. İnanıram ki, səbr və
-            əzmlə bu hədəfə çatmaq mümkündür.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            minus sit, enim necessitatibus molestiae eos aspernatur consectetur
+            non impedit labore saepe sunt deserunt quibusdam blanditiis
+            accusantium magni officiis qui fugit. Ab eveniet, repellendus, quia
+            ipsum fugiat tempore ut necessitatibus sed nobis dolorum facere.
+            Laborum, eos? Explicabo repellendus nam totam sapiente natus
+            temporibus quo suscipit accusantium, quos facere sit ipsum
+            cupiditate! Aut earum molestias aperiam labore nam deleniti incidunt
+            veniam quia, ea itaque eos cumque unde voluptate ullam maxime
+            suscipit corporis voluptates necessitatibus sint culpa, harum sunt
+            exercitationem tempora rem! Delectus. Placeat, quis. Unde libero
+            beatae pariatur? Eaque, porro voluptates nam quasi magnam ipsum
+            corporis exercitationem sint consequatur distinctio numquam
+            temporibus sit voluptatibus ipsa quisquam quas ratione iste
+            consectetur, inventore mollitia. Quam commodi consectetur,
+            recusandae nulla numquam earum neque. Facere tempora eius quam rem
+            commodi sequi labore repudiandae sit nisi omnis molestiae natus
+            quibusdam, modi ipsam, animi minus incidunt autem. Pariatur.
           </p>
 
           <div className="flex  justify-center md:justify-start">
             <motion.a
-              href="/Cv.pdf"
+              href="#"
               target="_blank"
               download
               whileHover={{ scale: 1.05 }}
